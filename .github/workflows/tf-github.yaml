@@ -1,0 +1,9 @@
+# Create resource group in Azure with github Action
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set outputs
