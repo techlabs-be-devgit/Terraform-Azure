@@ -4,6 +4,6 @@ subscription_id = "5543a680-faa8-45a5-919e-7fb50b54ee90"
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+  name     = "Sample_TF_resource"
   location = "West Europe"
 }
