@@ -9,12 +9,12 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "rg" {
-  name     = "learnk8sResourceGroup"
+  name     = "learnk8sResourceGroup1"
   location = "northeurope"
 }
 
 resource "azurerm_kubernetes_cluster" "cluster" {
-  name                = "learnk8scluster"
+  name                = "learnk8scluster1"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   dns_prefix          = "learnk8scluster"
